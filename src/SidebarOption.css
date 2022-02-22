@@ -1,0 +1,23 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/*MaterialUI turns the icons into their own classes and these can be accessed using*/
+.sidebarOption > .MuiSvgIcon-root {
+  /*This tells the compiler that if you find any MUI-child item inside the sidebarOption, do this*/
+  padding: 10px;
+}
+.sidebarOption > h4 {
+  font-weight: 800; /*Boldness of the text */
+  margin-right: 20px;
+}
+.sidebarOption:hover {
+  background-color: #e8f5fe;
+  border-radius: 30px;
+  color: var(--twitter-color); /*To capture the variable declared in app.js*/
+  transition: color 100ms ease-out; /*This is to smoothen the transition*/
+}
+.sidebarOption--active {
+  color: var(--twitter-color);
+}
