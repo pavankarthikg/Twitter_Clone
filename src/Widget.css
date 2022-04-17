@@ -1,3 +1,33 @@
 .widget {
   flex: 0.3;
 }
+
+.widget_input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--twitter-bg);
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+
+.widget_input > input {
+  background-color: var(--twitter-bg);
+  border: none;
+}
+
+.widget_searchIcon {
+  color: gray;
+}
+
+.widget_widgetContainer {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 15px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+.widget_widgetContainer > h3 {
+  font-weight: 850;
+}

@@ -11,27 +11,24 @@ function PostRect({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="postRect">
       <div className="post_avatar">
-        <Avatar src={require("./twitter-icon.png")}> </Avatar>
+        <Avatar src={avatar}> </Avatar>
       </div>
       <div className="post_body">
         <div className="post_header">
           <div className="post_headerText">
             <h3>
-              PK once said{" "}
-              <span>
-                <VerifiedOutlinedIcon className="verification_badge" />
-                <p> @pawankarthik2</p>
+              {displayName}{" "}
+              <span className="post_headerSpecial">
+                {verified && <VerifiedOutlinedIcon className="verification_badge" />}@
+                {username}
               </span>
             </h3>
           </div>
           <div className="post_headerDescription">
-            <p>I love double D's</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src={require("./fight_club_poster.png")}
-          alt="Fight Club Iconnic Dialogue"
-        />
+        <img src={image} alt="Picture uploaded by the user" />
         <div className="post_footer">
           <ChatBubbleOutlineOutlinedIcon fontSize="small" />
           <RepeatOutlinedIcon fontSize="small" />
