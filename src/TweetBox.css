@@ -35,7 +35,22 @@
   width: 80px;
   margin-left: auto !important;
 }
-
+/*
+.tweetbox > tweetbox_input > profile_box {
+  size: 150px;
+}
+*/
+.TweetOptions {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 300px;
+}
+.TweetOptions > div {
+  padding: 5px;
+  color: var(--twitter-color);
+  size: 5px;
+}
 .tweetbox_input_image {
   border: none;
   padding: 21px;

@@ -1,5 +1,5 @@
 .feed {
-  flex: 0.5;
+  flex: 0.475;
   border-right: 1px solid var(--twitter-bg);
   /*min-width: fit-content; */ /*No matter what the dimensions of the post are, fit it to the content*/
   overflow-y: scroll;

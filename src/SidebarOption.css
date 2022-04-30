@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 /*MaterialUI turns the icons into their own classes and these can be accessed using*/
 .sidebarOption > .MuiSvgIcon-root {
@@ -9,7 +10,6 @@
   padding: 10px;
 }
 .sidebarOption > h4 {
-  font-weight: 800; /*Boldness of the text */
   margin-right: 20px;
 }
 .sidebarOption:hover {
